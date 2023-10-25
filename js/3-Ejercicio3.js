@@ -7,6 +7,11 @@ let resultado = "";
 
 while(confirmacion){
     let cadena = prompt("Ingrese una cadena de texto");
+
+    if(cadena === null){
+        break;
+    }
+
     resultado += cadena + "-";
 
     confirmacion = confirm("desea ingresar otra cadena de texto?");
