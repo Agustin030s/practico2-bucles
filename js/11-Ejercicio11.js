@@ -3,33 +3,33 @@ Realiza un script que pida por teclado 3 edades y 3 nombres e indique el nombre 
 */
 
 while (true) {
-  let edad1 = parseInt(prompt("Ingrese la primer edad"));
-  let nombre1 = prompt("Ingrese el primer nombre");
+  let primerEdad = parseInt(prompt("Ingrese la primer edad"));
+  let primerNombre = prompt("Ingrese el primer nombre");
 
-  let edad2 = parseInt(prompt("Ingrese la segunda edad"));
-  let nombre2 = prompt("Ingrese el segundo nombre");
+  let segundaEdad = parseInt(prompt("Ingrese la segunda edad"));
+  let segundoNombre = prompt("Ingrese el segundo nombre");
 
-  let edad3 = parseInt(prompt("Ingrese la tercer edad"));
-  let nombre3 = prompt("Ingrese el tercer nombre");
+  let tercerEdad = parseInt(prompt("Ingrese la tercer edad"));
+  let tercerNombre = prompt("Ingrese el tercer nombre");
 
-  let mayor = Math.max(edad1, edad2, edad3);
+  let mayor = Math.max(primerEdad, segundaEdad, tercerEdad);
 
-  if (nombre1 === null || nombre2 === null || nombre3 === null) {
+  if (primerNombre === null || segundoNombre === null || tercerNombre === null) {
     alert("Ingrese un nombre válido");
   }
 
-  if (!isNaN(edad1) && !isNaN(edad2) && !isNaN(edad3)) {
-    if (mayor === edad1) {
+  if (!isNaN(primerEdad) && !isNaN(segundaEdad) && !isNaN(tercerEdad)) {
+    if (mayor === primerEdad) {
       document.write(
-        `<h2 class="ms-4">${nombre1} es el mayor, tiene ${edad1} años.</h2>`
+        `<h2 class="ms-4">${primerNombre} es el mayor, tiene ${primerEdad} años.</h2>`
       );
-    } else if (mayor === edad2) {
+    } else if (mayor === segundaEdad) {
       document.write(
-        `<h2 class="ms-4">${nombre2} es el mayor, tiene ${edad2} años.</h2>`
+        `<h2 class="ms-4">${segundoNombre} es el mayor, tiene ${segundaEdad} años.</h2>`
       );
     } else {
       document.write(
-        `<h2 class="ms-4">${nombre3} es el mayor, tiene ${edad3} años.</h2>`
+        `<h2 class="ms-4">${tercerNombre} es el mayor, tiene ${tercerEdad} años.</h2>`
       );
     }
 

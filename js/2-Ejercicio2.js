@@ -9,7 +9,7 @@ Escribir un programa que solicite una nota (número) de 0  a 10. Luego mostrar l
 10: Sobresaliente
 */
 
-let nota = parseInt(prompt("Ingrese una nota"));
+const nota = parseInt(prompt("Ingrese una nota"));
 
 if (nota < 0 || nota > 10 || nota === NaN) {
   alert("La nota ingresada no es valida");
