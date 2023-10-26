@@ -4,22 +4,29 @@ Realiza un script que pida número de filas y columnas y escriba una tabla. Dent
 
 while (true) {
   const filas = parseInt(prompt("Ingrese el número de filas de la tabla"));
-  const columnas = parseInt(prompt("Ingrese el número de columnas de la tabla"));
+  const columnas = parseInt(
+    prompt("Ingrese el número de columnas de la tabla")
+  );
 
   if (!isNaN(filas) && filas > 0) {
     if (!isNaN(columnas) && columnas > 0) {
       let numero = filas * columnas;
 
+      document.write(`<h2 class="m-3">Tabla de ${filas} filas y ${columnas} columas.</h2>`);
+      document.write(
+        `<table class="border border-warning mx-4"><tbody>`
+      );
       for (let i = 1; i <= filas; i++) {
-        let fila = "";
+        document.write(`<tr>`);
         for (let j = 1; j <= columnas; j++) {
-          fila += numero + "\t";
+          document.write(
+            `<td class="border border-primary p-2">${numero}</td>`
+          );
           numero--;
         }
-
-        console.log(fila);
-        document.write(`<h2 class="ms-4">${fila}</h2>`);
+        document.write(`</tr>`);
       }
+      document.write(`</tbody></table>`);
 
       break;
     } else {
