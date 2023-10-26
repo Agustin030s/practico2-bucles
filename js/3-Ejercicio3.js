@@ -1,20 +1,21 @@
 /*
 Realiza un script que pida cadenas de texto  hasta que se pulse “cancelar”. Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión -.
 */
-
-let confirmacion = true;
 let resultado = "";
 
-while (confirmacion) {
-  let cadena = prompt("Ingrese una cadena de texto");
+
+do{
+  const cadena = prompt("Ingrese una cadena de texto");
 
   if (cadena === null) {
     break;
   }
 
-  resultado += cadena + "-";
+  if (resultado.length === 0) {
+    resultado += cadena;
+  } else {
+    resultado += "-" + cadena;
+  }
+} while(confirm("Desea ingresar otra cadena de texto?"));
 
-  confirmacion = confirm("desea ingresar otra cadena de texto?");
-}
-
-document.write(`<h2> ${resultado} </h2>`);
+document.write(`<h2>La frase completa es: ${resultado} </h2>`);

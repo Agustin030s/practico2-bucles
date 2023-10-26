@@ -4,9 +4,7 @@ Realiza un script que pida números hasta que se pulse “cancelar”. Si no es 
 
 let resultadoSuma = 0;
 
-let confirmacion = true;
-
-while (confirmacion) {
+do {
   let numero = prompt("Ingrese un numero");
 
   if (numero === null) {
@@ -22,9 +20,7 @@ while (confirmacion) {
       "El numero ingresado, no es número valido, ingrese el número nuevamente"
     );
   }
-
-  confirmacion = confirm("Desea ingresar otro número?");
-}
+} while (confirm("Desea ingresar otro número?"));
 
 document.write(
   `<h2>La suma total de los números ingresados es: ${resultadoSuma}.</h2>`

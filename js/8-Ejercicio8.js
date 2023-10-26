@@ -3,7 +3,7 @@ Crea script para generar pirámide siguiente con los números del 1 al número q
 */
 
 while (true) {
-  let numero = parseInt(prompt("Ingrese un número"));
+  const numero = parseInt(prompt("Ingrese un número"));
 
   if (!isNaN(numero) && numero > 0 && numero <= 50) {
     for (let i = 1; i <= numero; i++) {

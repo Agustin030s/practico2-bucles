@@ -3,7 +3,7 @@ Haz un script que escriba una pirámide inversa de los números del 1 al número
 */
 
 while (true) {
-  let numero = parseInt(prompt("Ingrese un número"));
+  const numero = parseInt(prompt("Ingrese un número"));
 
   if (!isNaN(numero) && numero > 0 && numero <= 50) {
     for (let i = numero; i >= 1; i--) {
