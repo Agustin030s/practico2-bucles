@@ -3,8 +3,7 @@ Realiza un script que pida cadenas de texto  hasta que se pulse “cancelar”. 
 */
 let resultado = "";
 
-
-do{
+do {
   const cadena = prompt("Ingrese una cadena de texto");
 
   if (cadena === null) {
@@ -16,6 +15,6 @@ do{
   } else {
     resultado += "-" + cadena;
   }
-} while(confirm("Desea ingresar otra cadena de texto?"));
+} while (confirm("Desea ingresar otra cadena de texto?"));
 
 document.write(`<h2>La frase completa es: ${resultado} </h2>`);

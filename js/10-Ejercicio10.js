@@ -3,8 +3,8 @@ Realiza un script que pida número de filas y columnas y escriba una tabla. Dent
 */
 
 while (true) {
-  let filas = parseInt(prompt("Ingrese el número de filas de la tabla"));
-  let columnas = parseInt(prompt("Ingrese el número de columnas de la tabla"));
+  const filas = parseInt(prompt("Ingrese el número de filas de la tabla"));
+  const columnas = parseInt(prompt("Ingrese el número de columnas de la tabla"));
 
   if (!isNaN(filas) && filas > 0) {
     if (!isNaN(columnas) && columnas > 0) {
