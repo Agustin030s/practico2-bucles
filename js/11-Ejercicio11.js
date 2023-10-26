@@ -3,16 +3,16 @@ Realiza un script que pida por teclado 3 edades y 3 nombres e indique el nombre 
 */
 
 while (true) {
-  let primerEdad = parseInt(prompt("Ingrese la primer edad"));
-  let primerNombre = prompt("Ingrese el primer nombre");
+  const primerEdad = parseInt(prompt("Ingrese la primer edad"));
+  const primerNombre = prompt("Ingrese el primer nombre");
 
-  let segundaEdad = parseInt(prompt("Ingrese la segunda edad"));
-  let segundoNombre = prompt("Ingrese el segundo nombre");
+  const segundaEdad = parseInt(prompt("Ingrese la segunda edad"));
+  const segundoNombre = prompt("Ingrese el segundo nombre");
 
-  let tercerEdad = parseInt(prompt("Ingrese la tercer edad"));
-  let tercerNombre = prompt("Ingrese el tercer nombre");
+  const tercerEdad = parseInt(prompt("Ingrese la tercer edad"));
+  const tercerNombre = prompt("Ingrese el tercer nombre");
 
-  let mayor = Math.max(primerEdad, segundaEdad, tercerEdad);
+  const mayor = Math.max(primerEdad, segundaEdad, tercerEdad);
 
   if (primerNombre === null || segundoNombre === null || tercerNombre === null) {
     alert("Ingrese un nombre válido");
