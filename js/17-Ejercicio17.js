@@ -7,16 +7,20 @@ texto = texto.toLowerCase();
 
 let posición = 0;
 
-for(let i = 0; i <= texto.length; i++){
-    if (
-        texto.charAt(i) === "a" ||
-        texto.charAt(i) === "e" ||
-        texto.charAt(i) === "i" ||
-        texto.charAt(i) === "o" ||
-        texto.charAt(i) === "u"
-      ){
-        posición = i;
-        document.write(`<h2 class="ms-4">La vocal "${texto.charAt(i)}" está en la posición ${i}</h2>`);
-        break;
-      }
+for (let i = 0; i <= texto.length; i++) {
+  if (
+    texto.charAt(i) === "a" ||
+    texto.charAt(i) === "e" ||
+    texto.charAt(i) === "i" ||
+    texto.charAt(i) === "o" ||
+    texto.charAt(i) === "u"
+  ) {
+    posición = i;
+    document.write(
+      `<h2 class="ms-4">La vocal "${texto.charAt(
+        i
+      )}" está en la posición ${i}</h2>`
+    );
+    break;
+  }
 }

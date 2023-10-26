@@ -6,22 +6,26 @@ let resultadoSuma = 0;
 
 let confirmacion = true;
 
-while(confirmacion){
-    let numero = prompt("Ingrese un numero");
+while (confirmacion) {
+  let numero = prompt("Ingrese un numero");
 
-    if(numero === null){
-        break;
-    }
+  if (numero === null) {
+    break;
+  }
 
-    numero = parseInt(numero);
+  numero = parseInt(numero);
 
-    if(!isNaN(numero)){
-        resultadoSuma += numero;
-    } else {
-        alert("El numero ingresado, no es número valido, ingrese el número nuevamente");
-    }
+  if (!isNaN(numero)) {
+    resultadoSuma += numero;
+  } else {
+    alert(
+      "El numero ingresado, no es número valido, ingrese el número nuevamente"
+    );
+  }
 
-    confirmacion = confirm("Desea ingresar otro número?")
+  confirmacion = confirm("Desea ingresar otro número?");
 }
 
-document.write(`<h2>La suma total de los números ingresados es: ${resultadoSuma}.</h2>`);
+document.write(
+  `<h2>La suma total de los números ingresados es: ${resultadoSuma}.</h2>`
+);

@@ -14,8 +14,10 @@ for (let i = 0; i < texto.length; i++) {
     texto.charAt(i) === "o" ||
     texto.charAt(i) === "u"
   ) {
-    contador++
+    contador++;
   }
 }
 
-document.write(`<h2 class="ms-4">El texto ingresado tiene ${contador} vocales.</h2>`);
+document.write(
+  `<h2 class="ms-4">El texto ingresado tiene ${contador} vocales.</h2>`
+);

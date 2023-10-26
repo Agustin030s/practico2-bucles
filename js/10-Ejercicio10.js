@@ -22,8 +22,8 @@ while (true) {
       }
 
       break;
-    } else{
-        alert("Ingrese un número válido para las columnas");
+    } else {
+      alert("Ingrese un número válido para las columnas");
     }
   } else {
     alert("Ingrese un número válido para las filas");

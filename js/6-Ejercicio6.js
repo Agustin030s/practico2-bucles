@@ -10,12 +10,11 @@ Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma :
 ……
 */
 
-for(let i = 1; i <= 30; i++){
-    
-    let linea = "";
-    for(let j = 1; j <= i; j++){
-        linea += i;
-    }
+for (let i = 1; i <= 30; i++) {
+  let linea = "";
+  for (let j = 1; j <= i; j++) {
+    linea += i;
+  }
 
-    document.write(`<h2 class="ms-4">${linea}</h2>`);
+  document.write(`<h2 class="ms-4">${linea}</h2>`);
 }

@@ -5,8 +5,8 @@ Realiza un script que pida una cadena de texto y lo muestre poniendo el signo â€
 let texto = prompt("Ingrese un texto");
 let result = "";
 
-for(let i = 0; i < texto.length; i++){
-    result += texto.charAt(i) + '-';
+for (let i = 0; i < texto.length; i++) {
+  result += texto.charAt(i) + "-";
 }
 
 document.write(`<h2 class="ms-4">${result}</h2>`);

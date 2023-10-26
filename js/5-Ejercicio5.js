@@ -20,32 +20,26 @@ let confirmacion = true;
 
 let letras = "TRWAGMYFPDXBNJZSQVHLCKE";
 
-while(confirmacion){
-    let dni = prompt("Ingrese un numero de DNI");
+while (confirmacion) {
+  let dni = prompt("Ingrese un numero de DNI");
 
-    if(dni === null){
-        break;
+  if (dni === null) {
+    break;
+  }
+
+  dni = parseInt(dni);
+
+  if (!isNaN(dni)) {
+    if (dni >= 0 && dni <= 99999999) {
+      let resto = dni % 23;
+
+      let letraDni = letras.charAt(resto);
+
+      document.write(`<h2> La letra del DNI ${dni} es ${letraDni} </br> </h2>`);
     }
+  } else {
+    alert("El número de DNI ingresado no es válido.");
+  }
 
-    dni = parseInt(dni);
-
-    if(!isNaN(dni)){
-        if(dni >= 0 && dni <= 99999999){
-            let resto = dni % 23;
-    
-            let letraDni = letras.charAt(resto);
-    
-            document.write(`<h2> La letra del DNI ${dni} es ${letraDni} </br> </h2>`);
-        }
-    }else{
-        alert("El número de DNI ingresado no es válido.");
-    }
-
-    confirmacion = confirm("Desea ingresar otro numero de DNI?");
-
+  confirmacion = confirm("Desea ingresar otro numero de DNI?");
 }
-
-
-
-
-

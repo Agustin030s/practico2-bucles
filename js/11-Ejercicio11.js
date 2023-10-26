@@ -18,26 +18,23 @@ while (true) {
     alert("Ingrese un nombre válido");
   }
 
-  if(!isNaN(edad1) && !isNaN(edad2) && !isNaN(edad3)){
-
+  if (!isNaN(edad1) && !isNaN(edad2) && !isNaN(edad3)) {
     if (mayor === edad1) {
-        document.write(
-          `<h2 class="ms-4">${nombre1} es el mayor, tiene ${edad1} años.</h2>`
-        );
-      } else if (mayor === edad2) {
-        document.write(
-          `<h2 class="ms-4">${nombre2} es el mayor, tiene ${edad2} años.</h2>`
-        );
-      } else {
-        document.write(
-          `<h2 class="ms-4">${nombre3} es el mayor, tiene ${edad3} años.</h2>`
-        );
-      }
+      document.write(
+        `<h2 class="ms-4">${nombre1} es el mayor, tiene ${edad1} años.</h2>`
+      );
+    } else if (mayor === edad2) {
+      document.write(
+        `<h2 class="ms-4">${nombre2} es el mayor, tiene ${edad2} años.</h2>`
+      );
+    } else {
+      document.write(
+        `<h2 class="ms-4">${nombre3} es el mayor, tiene ${edad3} años.</h2>`
+      );
+    }
 
-      break;
-
-  } else{
+    break;
+  } else {
     alert("Ingrese una edad valida");
   }
 }
-
