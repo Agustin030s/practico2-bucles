@@ -12,10 +12,10 @@ while (true) {
     if (!isNaN(columnas) && columnas > 0) {
       let numero = filas * columnas;
 
-      document.write(`<h2 class="m-3">Tabla de ${filas} filas y ${columnas} columas.</h2>`);
       document.write(
-        `<table class="border border-warning mx-4"><tbody>`
+        `<h2 class="m-3">Tabla de ${filas} filas y ${columnas} columas.</h2>`
       );
+      document.write(`<table class="border border-warning mx-4"><tbody>`);
       for (let i = 1; i <= filas; i++) {
         document.write(`<tr>`);
         for (let j = 1; j <= columnas; j++) {
